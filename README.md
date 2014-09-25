@@ -4,7 +4,7 @@ A simple WordPress plugin for enabling theCrag.com as an oEmbed provider.
 
 ### Install Plugin on WordPress ###
 
-To install the plugin you manually upload the `wp-thecrag-oembed.zip` file and activate the plugin on your WordPress site.
+To install the plugin you manually upload the `wp-thecrag-oembed.zip` file and activate the plugin on your WordPress site. You may find the latest zip file and an article on the plugin use at http://www.thecrag.com/article/to-be-written
 
 Once activated urls looking like:
 
@@ -17,20 +17,23 @@ This only works on WordPress version 4.0 and above.
 
 ### Setup ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+This repository is intended for developers of theCrag. The output of this repository is a WordPress plugin delivered as a zip file `wp-thecrag-oembed.zip`, which should be made available for consumers of theCrag content on word press sites.
 
-### Contribution guidelines ###
+The contents of the zip file are:
+   * wp-thecrag-oembed.php
 
-* Writing tests
-* Code review
-* Other guidelines
+Installation notes assume you have cloned the repository onto a Debian system using git. You will need the zip program `apt-get install zip`.
 
-### Who do I talk to? ###
+The plugin is a single php file. To create the plugin zip file run the following command:
 
-* Repo owner or admin
-* Other community or team contact
+`zip wp-thecrag-oembed.zip wp-thecrag-oembed.php`
+
+### TO DO ###
+
+  * Document some good example sites.
+  * Get feedback on the additional url's that would be interesting to embed.
+  * Register the plugin on official word press site.
+
+### For more information ###
+
+Contact theCrag directly - support@thecrag.com
