@@ -8,7 +8,8 @@ To install the plugin you manually upload the `wp-thecrag-oembed.zip` file and a
 
 Once activated urls looking like:
 
- * `https?//www.thecrag.com/photo/*`
+ * `http//www.thecrag.com/photo/*`
+ * `https//www.thecrag.com/photo/*`
 
 Will be converted to embedded content using WordPress's oEmbed implementation.
 
@@ -27,6 +28,10 @@ Installation notes assume you have cloned the repository onto a Debian system us
 The plugin is a single php file. To create the plugin zip file run the following command:
 
 `zip wp-thecrag-oembed.zip wp-thecrag-oembed.php`
+
+Once you have created the zip file it must be published so it is available to manually download. To hook into theCrag's current process copy the `wp-thecrag-oembed.zip` file to the static release directory. For example:
+
+`cp wp-thecrag-oembed.zip ../../static/wp/`
 
 ### TO DO ###
 
