@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP theCrag oEmbed
- * Plugin URI: http://www.thecrag.com/article/to-be-written
+ * Plugin URI: http://www.thecrag.com/article/oembed
  * Description: converts theCrag links to embedded content in your WordPress site
  * Version: 1.0
  * Author: Simon Dale
