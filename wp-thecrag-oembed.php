@@ -13,6 +13,8 @@
 function add_oembed_thecrag(){
   wp_oembed_add_provider( 'http://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
   wp_oembed_add_provider( 'https://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
+  wp_oembed_add_provider( 'http://www.thecrag.com/competition/*','https://www.thecrag.com/oembed');
+  wp_oembed_add_provider( 'https://www.thecrag.com/competition/*','https://www.thecrag.com/oembed');
 }
 add_action('init','add_oembed_thecrag');
 
