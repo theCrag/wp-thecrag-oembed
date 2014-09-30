@@ -1,0 +1,2 @@
+cp ../iframe-resizer/js/iframeResizer.min.js wp-thecrag-oembed/js/
+zip -r wp-thecrag-oembed.zip wp-thecrag-oembed
