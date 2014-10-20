@@ -11,17 +11,15 @@
  */
 
 function add_oembed_thecrag(){
+/* oembeds to production server */
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/photo/.*#i','https://www.thecrag.com/oembed',true);
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/competition/.*#i','https://www.thecrag.com/oembed',true);
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/(.+/)?(ascents|routes|areas|nodes|photos|topos|circuits|activity|climbers|favorites)(/.*)?#i','https://www.thecrag.com/oembed',true);
-/*
-  wp_oembed_add_provider( 'http://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
-  wp_oembed_add_provider( 'https://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
-  wp_oembed_add_provider( 'http://www.thecrag.com/competition/*','https://www.thecrag.com/oembed');
-  wp_oembed_add_provider( 'https://www.thecrag.com/competition/*','https://www.thecrag.com/oembed');
-  wp_oembed_add_provider( 'http://www.thecrag.com/ascents/*','https://www.thecrag.com/oembed');
-  wp_oembed_add_provider( 'https://www.thecrag.com/ascents/*','https://www.thecrag.com/oembed');
-*/
+
+/* oembeds to development server for testing purposes */
+  wp_oembed_add_provider( '#https?://dev\.thecrag\.com/photo/.*#i','https://dev.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://dev\.thecrag\.com/competition/.*#i','https://dev.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://dev\.thecrag\.com/(.+/)?(ascents|routes|areas|nodes|photos|topos|circuits|activity|climbers|favorites)(/.*)?#i','https://dev.thecrag.com/oembed',true);
 }
 
 
