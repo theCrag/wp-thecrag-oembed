@@ -13,7 +13,7 @@
 function add_oembed_thecrag(){
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/photo/.*#i','https://www.thecrag.com/oembed',true);
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/competition/.*#i','https://www.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/(.+/)?ascents(/.*)?#i','https://www.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/(.+/)?(ascents|routes|areas|nodes|photos|topos|circuits|activity|climbers|favorites)(/.*)?#i','https://www.thecrag.com/oembed',true);
 /*
   wp_oembed_add_provider( 'http://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
   wp_oembed_add_provider( 'https://www.thecrag.com/photo/*','https://www.thecrag.com/oembed');
