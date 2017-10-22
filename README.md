@@ -4,14 +4,22 @@ A simple WordPress plugin for enabling theCrag.com as an oEmbed provider.
 
 ### Install Plugin on WordPress ###
 
-To install the plugin you manually upload the `wp-thecrag-oembed.zip` file and activate the plugin on your WordPress site. You may find the latest zip file and an article on the plugin use at http://www.thecrag.com/article/oembed
+To install the plugin you manually upload the `wp-thecrag-oembed.zip` file and activate the plugin on your WordPress site. You may find the latest zip file and an article on the plugin use at:
 
-Once activated urls looking like:
+https://www.thecrag.com/article/oembed
 
- * `http//www.thecrag.com/photo/*`
- * `https//www.thecrag.com/photo/*`
+Or you can git clone this repo directly into your Wordpress installation:
 
-Will be converted to embedded content using WordPress's oEmbed implementation.
+```
+cd wp-content/plugins
+git clone https://github.com/theCrag/wp-thecrag-oembed.git
+```
+
+Once activated urls such as these:
+
+ * `https://www.thecrag.com/photo/*`
+
+will be converted to embedded content using WordPress's oEmbed implementation.
 
 This only works on WordPress version 4.0 and above.
 
