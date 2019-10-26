@@ -11,17 +11,8 @@
  */
 
 function add_oembed_thecrag(){
-/* oembeds to production server */
-  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/photo/.*#i','https://www.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/competition/.*#i','https://www.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/climber/(.+)/stream/mine#i','https://www.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/(.+/)?(ascents|routes|areas|nodes|photos|topos|circuits|activity|climbers|favorites|stream)(/.*)?#i','https://www.thecrag.com/oembed',true);
-
-/* oembeds to development server for testing purposes */
-  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/photo/.*#i','https://dev.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/competition/.*#i','https://dev.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/climber/(.+)/stream/mine#i','https://dev.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/(.+/)?(ascents|routes|areas|nodes|photos|topos|circuits|activity|climbers|favorites|stream)(/.*)?#i','https://dev.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/.*#i','https://www.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/.*#i','https://dev.thecrag.com/oembed',true);
 }
 
 
