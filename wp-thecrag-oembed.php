@@ -12,7 +12,7 @@
 
 function add_oembed_thecrag(){
   wp_oembed_add_provider( '#https?://(www\.)?thecrag\.com/.*#i','https://www.thecrag.com/oembed',true);
-  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/.*#i','https://dev.thecrag.com/oembed',true);
+  wp_oembed_add_provider( '#https?://brendan\.thecrag\.com/.*#i','https://brendan.thecrag.com/oembed',true);
 }
 
 
